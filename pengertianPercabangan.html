@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Python Mudah</title>
+        <link rel="icon" href="#" type="image/icon type">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="styling.css">
+    <body>
+        <nav class="nav nav-pills flex-column flex-sm-row bg1">
+            <!-- tombol sidebar-->
+            <div class="align-content-between ml-4 text-light ml">
+                <button class="btn btn-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list text-light" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                      </svg>
+                </button>
+            </div>
+            <a class="flex-sm-fill text-sm-center nav-link text-light " aria-current="page" href="#">Media Pembelajaran Interaktif</a>
+            <a class="flex-sm-fill text-sm-center nav-link text-light" href="landingLatihan.html">Evaluasi</a>
+            <a class="flex-sm-fill text-sm-center nav-link text-light" href="landingMateri.html">Home</a>
+            <a id="userlink" style="margin-right: 15px; " class="flex-sm-fill text-sm-center nav-link text-light" href="#"></a>
+        </nav>
+        <!-- side bar -->
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+          <!-- header sidebar -->
+          <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Pilihan Materi</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <!-- body sidebar -->
+          <div class="offcanvas-body">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <!-- Materi 1 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Pendahuluan
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <table class="table table-striped">
+                          <tbody><tr>
+                                <td>
+                                    <a href="sejarah.html" id="link"> <!-- sub materi 1 -->
+                                        &ensp;&ensp;Kedatangan Islam ke Nusantara
+                                    </a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                    <a href="pengenalanSyntax.html" id="link"> <!-- sub materi 1 -->
+                                        &ensp;&ensp;Peta Konsep
+                                    </a>
+                                  </td>
+                              </tr>
+                          </tbody></table>
+                    </div>
+                  </div>
+                  <!-- Materi 2 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Kedatangan Islam ke Nusantara
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <table class="table table-striped">
+                          <tbody><tr>
+                                <td>
+                                    <a href="pengertianPercabangan.html" id="link"> <!-- sub materi 2 -->
+                                        &ensp;&ensp;Materi
+                                    </a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                    <a href="jenisPercabangan.html" id="link"> <!-- sub materi 2 -->
+                                        &ensp;&ensp;Rangkuman
+                                    </a>
+                                  </td>
+                              </tr>
+                          </tbody></table>
+                    </div>
+                  </div>
+                  <!-- Materi 3 -->
+                  <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                          Islam dan Jaringan Perdagangan Antarpulau
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <table class="table table-striped">
+                              <tbody><tr>
+                                    <td>
+                                        <a href="pengertianPerulangan.html" id="link"> <!-- sub materi 3 -->
+                                            &ensp;&ensp;Mengamati Lingkungan
+                                        </a>
+                                    </td>
+                                  </tr>
+                              </tbody></table>
+                      </div>
+                    </div>
+                    <!-- Materi 4 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                          Menu
+                        </button>
+                      </h2>
+                      <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <table class="table table-striped">
+                              <tbody><tr>
+                                    <td>
+                                        <a href="landingMateri.html" id="link"> <!-- sub materi 4 -->
+                                            &ensp;&ensp;Home
+                                        </a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                        <a href="landingLatihan.html" id="link"> <!-- sub materi 4 -->
+                                            &ensp;&ensp;Evaluasi
+                                        </a>
+                                      </td>
+                                  </tr>
+                              </tbody></table>
+                      </div>
+                  </div>
+              </div>
+          </div> <!-- Tag tutup off canvas body accordion -->
+      </div><!-- Tag tutup off canvas accordion --> 
+      </div><!-- Tag tutup off canvas accordion -->     
+        <!-- grid pertama -->
+        <div class="container mt-4">
+            <h1 class="text1">Kedatangan Islam ke Nusantara</h1>
+            <div class="row mt-3">
+              <div class="col-xl-12">
+                <!-- text box 1 -->
+                <div class="card mt-3">
+                  <h5 class="card-header">Memahami Teks</h5>
+                  <div class="card-body">
+                      <p class="card-text text-justify">
+                        Terdapat berbagai pendapat mengenai proses masuknya 
+                        Islam ke Kepulauan Indonesia, terutama perihal waktu dan tempat 
+                        asalnya.
+                      </p><br>
+                  </div>
+              </div>
+              <div class="card mt-3">
+                <h5 class="card-header">Pertama</h5>
+                <div class="card-body">
+                    <p class="card-text text-justify">
+                      Pertama, sarjana-sarjana Barat—kebanyakan dari Negeri 
+                      Belanda—mengatakan bahwa Islam yang masuk ke Kepulauan 
+                      Indonesia berasal dari Gujarat sekitar abad ke-13 M 
+                      atau abad ke-7 H. Pendapat ini mengasumsikan bahwa 
+                      Gujarat terletak di India bagian barat, berdekatan 
+                      dengan Laut Arab. Letaknya sangat strategis, berada 
+                      di jalur perdagangan antara timur dan barat. Pedagang 
+                      Arab yang bermahzab Syafi’i telah bermukim di Gujarat 
+                      dan Malabar sejak awal tahun Hijriyah (abad ke-7 M). 
+                      Orang yang menyebarkan Islam ke Indonesia menurut 
+                      Pijnapel bukanlah dari orang Arab langsung, melainkan 
+                      para pedagang Gujarat yang telah memeluk Islam 
+                      dan berdagang ke dunia Timur. Pendapat J. Pijnapel 
+                      kemudian didukung oleh C. Snouck Hurgronye, dan 
+                      J.P. Moquetta (1912). Argumentasinya didasarkan pada batu nisan Sultan Malik Al-Saleh yang wafat pada 17 Dzulhijjah 831 
+                      H atau 1297 M di Pasai, Aceh. Menurutnya, batu nisan di Pasai dan 
+                      makam Maulana Malik Ibrahim yang wafat tahun 1419 di Gresik, 
+                      Jawa Timur, memiliki bentuk yang sama dengan batu nisan yang 
+                      terdapat di Kambay, Gujarat. Moquetta kemudian berkesimpulan 
+                      bahwa batu nisan tersebut diimpor dari Gujarat, atau setidaknya 
+                      dibuat oleh orang Gujarat atau orang Indonesia yang telah belajar 
+                      kaligrafi khas Gujarat.
+                    </p><br>
+                    <img src="nisan.png" class="rounded mx-auto d-block mt-2 mb-2" alt="Nisan">
+                </div>
+            </div>
+            <div class="card mt-3">
+              <h5 class="card-header">Kedua</h5>
+              <div class="card-body">
+                  <p class="card-text text-justify">
+                    Kedua, Hoesein Djajadiningrat mengatakan bahwa Islam yang 
+                    masuk ke Indonesia berasal dari Persia (Iran sekarang). Pendapatnya 
+                    didasarkan pada kesamaan budaya dan tradisi yang berkembang 
+                    antara masyarakat Parsi dan Indonesia. Tradisi tersebut antara lain: 
+                    tradisi merayakan 10 Muharram atau Asyuro sebagai hari suci kaum 
+                    Syiah atas kematian Husein bin Ali, seperti yang berkembang dalam 
+                    tradisi tabot di Pariaman di Sumatra Barat dan Bengkulu.
+                  </p><br>
+                  <img src="nisan2.png" class="rounded mx-auto d-block mt-2 mb-2" alt="If Elif Else">
+              </div>
+          </div>
+          <div class="card mt-3">
+            <h5 class="card-header">Ketiga</h5>
+            <div class="card-body">
+                <p class="card-text text-justify">
+                  Ketiga, Buya Hamka (Haji Abdul Malik Karim 
+                  Amrullah) mengatakan bahwa Islam berasal 
+                  dari tanah kelahirannya, yaitu Arab atau Mesir. 
+                  Proses ini berlangsung pada abad pertama 
+                  Hijriah atau abad ke-7 M. Senada dengan 
+                  pendapat Hamka, teori yang mengatakan 
+                  bahwa Islam berasal dari Mekkah dikemukakan 
+                  Anthony H. Johns. Menurutnya, proses 
+                  Islamisasi dilakukan oleh para musafir (kaum 
+                  pengembara) yang datang ke Kepulauan 
+                  Indonesia. Kaum ini biasanya mengembara 
+                  dari satu tempat ke tempat lainnya dengan 
+                  motivasi hanya pengembangan agama Islam.
+                </p><br>
+                <img src="nisan3.png" class="rounded mx-auto d-block mt-2 mb-2" alt="If Elif Else"><br>
+                <p class="card-text text-justify">
+                  Semua teori di atas bukan mengada-ada, 
+                  tetapi mungkin bisa saling melengkapi. Islamisasi 
+                  di Kepulauan Indonesia merupakan hal yang 
+                  kompleks dan hingga kini prosesnya masih terus 
+                  berjalan. Pasai dan Malaka, adalah tempat di mana 
+                  tongkat estafet Islamisasi dimulai. Pengaruh Pasai 
+                  kemudian diwarisi Aceh Darussalam. Sedangkan 
+                  Johor tidak pernah bisa melupakan jasa dinasti 
+                  Palembang yang pernah berjaya dan mengislamkan 
+                  Malaka. Demikian pula Sulu dan Mangindanao 
+                  akan selalu mengingat Johor sebagai pengirim 
+                  Islam ke wilayahnya. Sementara itu Minangkabau 
+                  akan selalu mengingat Malaka sebagai pengirim 
+                  Islam dan tak pernah melupakan Aceh sebagai 
+                  peletak dasar tradisi surau di Ulakan. Sebaliknya 
+                  Pahang akan selalu mengingat pendatang dari 
+                  Minangkabau yang telah membawa Islam. 
+                  Peranan para perantau dan penyiar agama Islam 
+                  dari Minangkabau juga selalu diingat dalam tradisi 
+                  Luwu dan Gowa-Tallo.
+                </p><br>
+            </div>
+        </div>
+        <a class="btn btn-primary mt-3" role="button" href="jenisPercabangan.html">Rangkuman =></a>
+        </div>
+        <script>
+          //tampilan nama user atau pengguna
+          var pengguna = sessionStorage.getItem("fullname");
+          var namaPengguna = document.getElementById("userlink");
+          namaPengguna.innerText = pengguna;
+          function Signout(){
+            sessionStorage.removeItem('username');
+            sessionStorage.removeItem('fullname');
+            sessionStorage.removeItem('password');
+            sessionStorage.removeItem('class');
+            sessionStorage.removeItem('nim');
+            sessionStorage.removeItem('evaluasi');
+            sessionStorage.removeItem('latihan');
+            window.location="halamanLogin.html"
+          }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    </body>
+</html>

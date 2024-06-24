@@ -1,0 +1,99 @@
+.bg1 {
+    background-color: #ff8000; /* changed from purple to orange */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #ced4da;
+}
+
+.text1 {
+    color: black;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#link {
+    text-decoration: none;
+    color: black;
+}
+
+.ml {
+    margin-left: 15px;
+}
+
+.bg2 {
+    background-image: url(BG1.jpg);
+}
+
+.tengah {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.kotak {
+    background-color: rgba(255, 255, 255, 0.263);
+    border-radius: 5px;
+}
+
+.text2 {
+    margin-left: 15px;
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 25px;
+}
+
+.text3 {
+    margin-left: 15px;
+    color: white;
+    font-weight: 400;
+    font-size: 29px;
+}
+
+.text4 {
+    margin-left: 25px;
+    font-weight: 700;
+}
+
+h3 {
+    margin-left: 25px;
+}
+
+.inputan {
+    width: 550px;
+    height: 35px;
+    margin-left: 25px;
+}
+
+.radioBox {
+    height: 15px;
+    width: 15px;
+    margin-left: 25px;
+}
+
+label {
+    font-size: 20px;
+}
+
+.gradasi {
+    background: rgb(255,165,0); /* changed from purple to orange */
+    background: linear-gradient(90deg, rgba(255,165,0,1) 0%, rgba(255,140,0,1) 0%, rgba(255,69,0,1) 100%); /* changed gradient colors to shades of orange */
+}
+
+.textOption {
+    color: red;
+}
+
+.ml3 {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.Judul {
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 700;
+}

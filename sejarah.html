@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Python Mudah</title>
+        <link rel="icon" href="#" type="image/icon type">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="styling.css">
+    <body>
+        <nav class="nav nav-pills flex-column flex-sm-row bg1">
+            <!-- tombol sidebar-->
+            <div class="align-content-between ml-4 text-light ml">
+                <button class="btn btn-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list text-light" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                      </svg>
+                </button>
+            </div>
+            <a class="flex-sm-fill text-sm-center nav-link text-light " aria-current="page" href="#">Media Pembelajaran Interaktif</a>
+            <a class="flex-sm-fill text-sm-center nav-link text-light" href="landingLatihan.html">Evaluasi</a>
+            <a class="flex-sm-fill text-sm-center nav-link text-light" href="landingMateri.html">Home</a>
+            <a id="userlink" style="margin-right: 15px; " class="flex-sm-fill text-sm-center nav-link text-light" href="#"></a>
+        </nav>
+        <!-- side bar -->
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+          <!-- header sidebar -->
+          <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Pilihan Materi</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <!-- body sidebar -->
+          <div class="offcanvas-body">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <!-- Materi 1 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Pendahuluan
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <table class="table table-striped">
+                          <tbody><tr>
+                                <td>
+                                    <a href="sejarah.html" id="link"> <!-- sub materi 1 -->
+                                        &ensp;&ensp;Kedatangan Islam ke Nusantara
+                                    </a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                    <a href="pengenalanSyntax.html" id="link"> <!-- sub materi 1 -->
+                                        &ensp;&ensp;Peta Konsep
+                                    </a>
+                                  </td>
+                              </tr>
+                          </tbody></table>
+                    </div>
+                  </div>
+                  <!-- Materi 2 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Kedatangan Islam ke Nusantara
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <table class="table table-striped">
+                          <tbody><tr>
+                                <td>
+                                    <a href="pengertianPercabangan.html" id="link"> <!-- sub materi 2 -->
+                                        &ensp;&ensp;Materi
+                                    </a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                    <a href="jenisPercabangan.html" id="link"> <!-- sub materi 2 -->
+                                        &ensp;&ensp;Rangkuman
+                                    </a>
+                                  </td>
+                              </tr>
+                          </tbody></table>
+                    </div>
+                  </div>
+                  <!-- Materi 3 -->
+                  <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                          Islam dan Jaringan Perdagangan Antarpulau
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <table class="table table-striped">
+                              <tbody><tr>
+                                    <td>
+                                        <a href="pengertianPerulangan.html" id="link"> <!-- sub materi 3 -->
+                                            &ensp;&ensp;Mengamati Lingkungan
+                                        </a>
+                                    </td>
+                                  </tr>
+                              </tbody></table>
+                      </div>
+                    </div>
+                    <!-- Materi 4 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                          Menu
+                        </button>
+                      </h2>
+                      <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <table class="table table-striped">
+                              <tbody><tr>
+                                    <td>
+                                        <a href="landingMateri.html" id="link"> <!-- sub materi 4 -->
+                                            &ensp;&ensp;Home
+                                        </a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                        <a href="landingLatihan.html" id="link"> <!-- sub materi 4 -->
+                                            &ensp;&ensp;Evaluasi
+                                        </a>
+                                      </td>
+                                  </tr>
+                              </tbody></table>
+                      </div>
+                  </div>
+              </div>
+          </div> <!-- Tag tutup off canvas body accordion -->
+      </div><!-- Tag tutup off canvas accordion -->     
+        <!-- grid pertama -->
+        <div class="container mt-4">
+            <h1 class="text1">Pendahuluan</h1>
+            <div class="row mt-3">
+              <div class="col-xl-12">
+                <!-- text box 1 -->
+                <div class="card">
+                    <h5 class="card-header">Kedatangan Islam ke Nusantara</h5>
+                    <div class="card-body">
+                        <p class="card-text text-justify">Islamisasi adalah proses sejarah yang panjang yang bahkan 
+                          sampai kini masih terus berlanjut… Kalau para ahli sejarah 
+                          mempersoalkan tentang asal usul nasionalisme Indonesia, atau 
+                          integrasi bangsa, mereka menyebutkan Islam sebagai salah satu 
+                          faktor utama maka hal itu bisa diartikan pada sifat Islam yang 
+                          universal dan pada jaringan ingatan kolektif yaitu keterkaitan 
+                          para ulama di Nusantara dalam berbagai corak jaringan sosial 
+                          guru-murid, murid sesama murid; penulis-dan-pembaca, dan 
+                          tak kurang pentingnya ulama-umara serta ulama dan umat.
+                          (Taufik Abdullah, 1996)
+                        </p><br>
+                        <p class="card-text text-justify">Kedatangan Islam ke Nusantara mempunyai sejarah yang panjang. 
+                          Satu di antaranya adalah tentang interaksi ajaran Islam dengan 
+                          masyarakat di Nusantara yang kemudian memeluk Islam. Lewat 
+                          jaringan perdagangan, Islam dibawa masuk sampai ke lingkungan 
+                          istana. Interaksi budaya Islam dengan budaya yang ada sebelumnya 
+                          memunculkan sebuah jaringan keilmuan, akulturasi budaya dan 
+                          perkembangan kebudayaan Islam. Uraian berikut akan mencoba 
+                          menjabarkan proses Islamisasi di Indonesia dan mengurai simpul 
+                          dari silang budaya yang sampai kini masih terus berlanjut.
+                        </p><br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        <a class="btn btn-primary mt-3" role="button" href="pengenalanSyntax.html">Peta Konsep =></a>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    </body>
+</html>

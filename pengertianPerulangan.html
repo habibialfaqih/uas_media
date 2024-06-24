@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Python Mudah</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="styling.css">
+        <link rel="icon" href="#" type="image/icon type">
+    <body>
+        <nav class="nav nav-pills flex-column flex-sm-row bg1">
+            <!-- tombol sidebar-->
+            <div class="align-content-between ml-4 text-light ml">
+                <button class="btn btn-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list text-light" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                      </svg>
+                </button>
+            </div>
+            <a class="flex-sm-fill text-sm-center nav-link text-light " aria-current="page" href="#">Media Pembelajaran Interaktif</a>
+            <a class="flex-sm-fill text-sm-center nav-link text-light" href="landingLatihan.html">Evaluasi</a>
+            <a class="flex-sm-fill text-sm-center nav-link text-light" href="landingMateri.html">Home</a>
+            <a id="userlink" style="margin-right: 15px; " class="flex-sm-fill text-sm-center nav-link text-light" href="#"></a>
+        </nav>
+                <!-- side bar -->
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+          <!-- header sidebar -->
+          <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Pilihan Materi</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <!-- body sidebar -->
+          <div class="offcanvas-body">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <!-- Materi 1 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Pendahuluan
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <table class="table table-striped">
+                          <tbody><tr>
+                                <td>
+                                    <a href="sejarah.html" id="link"> <!-- sub materi 1 -->
+                                        &ensp;&ensp;Kedatangan Islam ke Nusantara
+                                    </a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                    <a href="pengenalanSyntax.html" id="link"> <!-- sub materi 1 -->
+                                        &ensp;&ensp;Peta Konsep
+                                    </a>
+                                  </td>
+                              </tr>
+                          </tbody></table>
+                    </div>
+                  </div>
+                  <!-- Materi 2 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Kedatangan Islam ke Nusantara
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <table class="table table-striped">
+                          <tbody><tr>
+                                <td>
+                                    <a href="pengertianPercabangan.html" id="link"> <!-- sub materi 2 -->
+                                        &ensp;&ensp;Materi
+                                    </a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                    <a href="jenisPercabangan.html" id="link"> <!-- sub materi 2 -->
+                                        &ensp;&ensp;Rangkuman
+                                    </a>
+                                  </td>
+                              </tr>
+                          </tbody></table>
+                    </div>
+                  </div>
+                  <!-- Materi 3 -->
+                  <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                          Islam dan Jaringan Perdagangan Antarpulau
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <table class="table table-striped">
+                              <tbody><tr>
+                                    <td>
+                                        <a href="pengertianPerulangan.html" id="link"> <!-- sub materi 3 -->
+                                            &ensp;&ensp;Mengamati Lingkungan
+                                        </a>
+                                    </td>
+                                  </tr>
+                              </tbody></table>
+                      </div>
+                    </div>
+                    <!-- Materi 4 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                          Menu
+                        </button>
+                      </h2>
+                      <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <table class="table table-striped">
+                              <tbody><tr>
+                                    <td>
+                                        <a href="landingMateri.html" id="link"> <!-- sub materi 4 -->
+                                            &ensp;&ensp;Home
+                                        </a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                        <a href="landingLatihan.html" id="link"> <!-- sub materi 4 -->
+                                            &ensp;&ensp;Evaluasi
+                                        </a>
+                                      </td>
+                                  </tr>
+                              </tbody></table>
+                      </div>
+                  </div>
+              </div>
+          </div> <!-- Tag tutup off canvas body accordion -->
+      </div><!-- Tag tutup off canvas accordion -->     
+        <!-- grid pertama -->
+        <div class="container mt-4">
+            <h1 class="text1">Islam dan Jaringan Perdagangan Antarpulau</h1>
+            <div class="row mt-3">
+              <div class="col-xl-12">
+                <!-- text box 1 -->
+                <div class="card">
+                    <h5 class="card-header">Mengamati Lingkungan</h5>
+                    <div class="card-body">
+                        <p class="card-text text-justify">
+                          Kepulauan Indonesia memiliki laut dan daratan yang luas. 
+                          Para nelayan pergi melaut dan pulang dengan membawa hasil 
+                          tangkapannya. Begitu juga di pelabuhan terlihat lalu lalang kapal 
+                          yang membongkar dan memuat barang. Sungguh menakjubkan 
+                          hamparan laut yang sangat luas ciptaan Tuhan. Coba kamu 
+                          renungkan alam semesta, lautan dan daratan semua diciptakanNya untuk kepentingan hidup kita. Marilah kita syukuri semua itu 
+                          dengan menjaga lingkungan laut dan daratan sebaik-baiknya.
+                        </p><br>
+                        <p class="card-text text-justify">
+                          Sejak lama laut telah berfungsi sebagai jalur pelayaran 
+                          dan perdagangan antarsuku bangsa di Kepulauan Indonesia 
+                          dan bangsa-bangsa di dunia. Pelaut tradisional Indonesia telah 
+                          memiliki keterampilan berlayar yang dipelajari dari nenek moyang 
+                          secara turun-temurun. Bagi para pelaut, samudra bukan sekadar suatu bentangan air yang sangat luas. Setiap perubahan warna, 
+                          pola gerak air, bentuk gelombang, jenis burung, dan ikan yang 
+                          mengitarinya dapat membantu pelaut dalam mengambil keputusan 
+                          atau tindakan untuk menentukan arah perjalanan. Sejak dulu 
+                          mereka sudah mengenal teknologi arah angin dan musim untuk 
+                          menentukan perjalanan pelayaran dan perdagangan. Kapal 
+                          pedagang yang berlayar ke selatan menggunakan musim utara 
+                          dalam Januari atau Februari dan kembali lagi pulang jika angin 
+                          bertiup dari selatan dalam Juni, Juli, atau Agustus. Angin musim 
+                          barat daya di Samudra Hindia adalah antara April sampai Agustus, 
+                          cara yang paling diandalkan untuk berlayar ke timur. Mereka dapat 
+                          kembali pada musim yang sama setelah tinggal sebentar—tapi 
+                          kebanyakan tinggal untuk berdagang—untuk menghindari musim 
+                          perubahan yang rawan badai dalam Oktober dan kembali dengan 
+                          musim timur laut.                          
+                        </p><br>
+                        <img src="kapal.png" class="rounded mx-auto d-block mt-2 mb-2" alt="If Elif Else"><br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        <a class="btn btn-primary mt-3" role="button" href="landingMateri.html">Home</a>
+        </div>
+        <script>
+          //tampilan nama user atau pengguna
+          var pengguna = sessionStorage.getItem("fullname");
+          var namaPengguna = document.getElementById("userlink");
+          namaPengguna.innerText = pengguna;
+          function Signout(){
+            sessionStorage.removeItem('username');
+            sessionStorage.removeItem('fullname');
+            sessionStorage.removeItem('password');
+            sessionStorage.removeItem('class');
+            sessionStorage.removeItem('nim');
+            sessionStorage.removeItem('evaluasi');
+            sessionStorage.removeItem('latihan');
+            window.location="halamanLogin.html"
+          }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    </body>
+</html>

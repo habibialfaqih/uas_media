@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Python Mudah</title>
+        <link rel="icon" href="#" type="image/icon type">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@100&family=Nunito:wght@500&family=Roboto:wght@100;700&family=Secular+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <div class = "Judul">
+                <h4 class="font">Media Pembelajaran Interakhtif</h4>
+            </div>
+            <ul>
+                <li><a href = "about.html" class = "nav1">About</a></li>
+                <li><a href = "about.html" class = "nav1">Help</a></li>
+                <li><p class="nav1" id="userlink"></p></li>
+            </ul>
+        </nav>
+        <div class = "container_1">
+            <div class = "content_kiri">
+                <h2 class = "ajakan">Materi Pembelajaran</h2>
+                <p class = "kalimatSiswa">Silahkan Pilih Menu</p>
+                <a href = "sejarah.html"><div class = "kotak"><p>Materi 1</p></div></a>
+                <a href = "pengertianPercabangan.html"><div class = "kotak2"><p>Materi 2</p></div></a>
+                <a href = "pengertianPerulangan.html"><div class = "kotak"><p>Materi 3</p></div></a>
+            </div>
+            <div class ="content_kanan">
+                <img src ="CoverSejarah.png" class="gambar">
+            </div>
+        </div>
+        <script>
+          //menampilkan nama pengguna dari firebase
+          var pengguna = sessionStorage.getItem("fullname");
+          var namaPengguna = document.getElementById("userlink");
+          namaPengguna.innerText = pengguna;
+        </script>
+    </body>
+</html>
